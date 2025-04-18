@@ -123,3 +123,112 @@ Developed using:
 
 ## 📂 Folder Structure
 
+# 🍽️ Restaurant Website
+
+A modern, responsive restaurant website using **HTML, CSS, Bootstrap, JavaScript, PHP**, and **MySQL**. This project allows users to view the menu, book reservations, send messages, and browse a beautiful UI with interactive components.
+
+---
+
+## 🔹 1. Basic Requirements
+
+### ✅ Frontend:
+- **HTML**: Structure of the website
+- **CSS / Bootstrap**: Styling and responsive layout
+- **JavaScript**: Interactivity (image sliders, form validation)
+
+### ✅ Backend:
+- **PHP**: Server-side scripting
+- **MySQL**: Database for storing data (menu, bookings, reviews)
+
+---
+
+## 🔹 2. Core Pages/Sections
+
+| Page/Section         | Description                                                |
+|----------------------|------------------------------------------------------------|
+| Home                 | Restaurant intro, featured dishes, image slider            |
+| Menu                 | List of food items with categories, prices, and images     |
+| About Us             | Info about the restaurant, chef, mission, etc.             |
+| Contact              | Contact form, Google Maps, phone, email                    |
+| Reservation/Booking  | Table booking form (saved in database)                     |
+| Gallery              | Images of food, ambience, and events                       |
+| Testimonials         | Customer reviews (stored/fetched from DB)                  |
+| Admin Panel (optional)| Secure area to manage content (requires login)            |
+
+---
+
+## 🔹 3. Features & Functionalities
+
+| Feature                        | Tech Needed                          |
+|-------------------------------|--------------------------------------|
+| Responsive design              | Bootstrap                            |
+| Contact/booking forms          | HTML + JS + PHP + MySQL              |
+| Store bookings in DB           | PHP + MySQL                          |
+| Display menu from DB           | PHP + MySQL                          |
+| Login/Registration (admin)     | PHP + MySQL (optional)               |
+| Feedback form                  | PHP + MySQL                          |
+| Image gallery/sliders          | Bootstrap Carousel / JS plugins      |
+
+---
+
+## 🔹 4. Database Structure (Basic Example)
+
+```sql
+-- Menu Table
+CREATE TABLE menu (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  description TEXT,
+  price DECIMAL(10,2),
+  category VARCHAR(50),
+  image VARCHAR(255)
+);
+
+-- Reservations Table
+CREATE TABLE reservations (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  phone VARCHAR(15),
+  date DATE,
+  time TIME,
+  people INT
+);
+
+-- Feedback/Testimonials
+CREATE TABLE testimonials (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  comment TEXT,
+  rating INT
+);
+```
+
+---
+
+## 🔹 5. Tools You Can Use
+
+- **XAMPP / WAMP**: Local development environment (Apache + PHP + MySQL)
+- **phpMyAdmin**: GUI for managing MySQL
+- **VS Code / Sublime Text**: Code editor
+
+---
+
+## 🔹 6. Extra Suggestions
+
+- ✅ Add SEO meta tags
+- ✅ Optimize for mobile
+- ✅ Use a favicon
+- ✅ Add social media links
+- ✅ Enable form validation (client-side & server-side)
+
+---
+
+## 📬 Contact Info
+
+**Developer**: Your Name  
+**GitHub**: [@yourusername](https://github.com/yourusername)  
+**Email**: your.email@example.com  
+
+> 💡 *“Good food is the foundation of genuine happiness!”*
+
